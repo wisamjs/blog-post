@@ -1,0 +1,24 @@
+{
+  "name": "blog-post",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wzaghal/blog-post.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wzaghal/blog-post/issues"
+  },
+  "homepage": "https://github.com/wzaghal/blog-post",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-connect": "^2.2.0",
+    "gulp-watch": "^4.1.1"
+  }
+}
