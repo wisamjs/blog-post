@@ -95,6 +95,6 @@ gulp.task('inject', function() {
 });
 
 
-gulp.task('default', function (cb) {
-  runSequence('API', 'lint', 'devServer', 'watch', cb);
+gulp.task('default', function (done) {
+  runSequence('API','devServer', 'watch', done);
 });
