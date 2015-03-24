@@ -54,21 +54,6 @@ function replaceApi(choice,done) {
   }
 }
 
-function inject(){
- var target = gulp.src('client/index.html');
- var sources = gulp.src([jsFiles], {
-  //dont need to read the files, just get the path
-  read: false 
-  });
-
- return target.pipe(inject(sources, {
-   addRootSlash: false,
-   ignorePath: 'client'
-   //so that path doesn't start with 'client/..'
-  }))
- .pipe(gulp.dest('client'));
-};
-
 gulp.task('watch', function() {
     watch(appFiles).pipe(connect.reload());
 
